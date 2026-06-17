@@ -165,30 +165,38 @@ perf-review-agent/
       perf-review/
         SKILL.md              # Full agent skill definition
   inputs/
-    hr-format-template.md     # HR review form structure
-    things-to-consider.md     # Evaluation criteria + rating scales
-    company-values.md         # Company values (full descriptions)
-    job-architecture.md       # Level definitions + expectations
-    [name]-peer-reviews.md    # Per-person: peer feedback (you provide)
-    [name]-self-review.md     # Per-person: self-assessment (you provide)
-    [name]-brain-dump.md      # Per-person: manager's notes (you provide)
+    hr-format-template.md     # Included: HR review form structure
+    things-to-consider.md     # Included: evaluation criteria + rating scales
+    company-values.md         # Included: company values (full descriptions)
+    job-architecture.md       # Included: level definitions + expectations
+    [name]-peer-reviews.md    # You provide: peer feedback
+    [name]-self-review.md     # You provide: self-assessment (coaching notes only)
+    [name]-brain-dump.md      # You provide: manager's notes
   outputs/
     [cycle]/
       [cycle]-[name].md           # Final review + coaching notes
       [cycle]-[name]-evidence.md  # Evidence inventory with sources
 ```
 
+## What's Included
+
+The repo ships with company inputs already configured:
+- **HR review template** (`inputs/hr-format-template.md`) — the review form structure
+- **Company values** (`inputs/company-values.md`) — full value definitions
+- **Job architecture** (`inputs/job-architecture.md`) — level definitions and expectations
+- **Evaluation criteria** (`inputs/things-to-consider.md`) — rating scales, competency breakdowns, anti-patterns
+
+These are ready to use out of the box. You don't need to upload or configure them.
+
 ## What You Need to Provide
 
-**Once (first review cycle):**
-- Your company's HR review template (replace `inputs/hr-format-template.md`)
-- Your company's values (replace `inputs/company-values.md`)
-- Your job architecture / leveling framework (replace `inputs/job-architecture.md`)
-- Your evaluation criteria (replace `inputs/things-to-consider.md`)
+**Once (first-time setup):**
+- Your name, role, company, and team scope
+- Your management style and what you expect from your team (e.g., "I expect proactivity and direct feedback" or "I value autonomy but want early escalation"). This calibrates every review the agent writes.
 
 **Per team member:**
-- Peer reviews (paste or upload)
-- Self-review (paste or upload)
+- Peer reviews (screenshot from your HR tool or copy-paste)
+- Self-review (screenshot or copy-paste; only used for coaching notes comparison, not for writing the review)
 - Your brain dump (unstructured notes, thoughts, impressions)
 
 ## Writing Style

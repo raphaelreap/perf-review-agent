@@ -48,6 +48,7 @@ Ask:
 2. **"What's your role?"** — e.g., Engineering Manager, VP Product, Head of Marketing
 3. **"What company are you at?"**
 4. **"What's the scope of your team?"** — e.g., "I manage the backend engineering team" or "I lead all of marketing for our B2B product"
+5. **"What's your management style and what do you expect from your team?"** — This shapes the tone and calibration of every review. For example: "I expect everyone to be proactive and push each other. I value radical honesty and direct feedback." Or: "I'm hands-off and expect autonomy, but I want people to escalate early when they're stuck." This context helps the agent understand what "meeting expectations" means for this specific manager.
 
 Save this to `inputs/setup-complete.md` so future sessions can skip this step.
 
