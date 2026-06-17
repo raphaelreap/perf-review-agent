@@ -368,7 +368,7 @@ The review is only final when the manager explicitly confirms they're satisfied 
 
 **Each file contains (in order):**
 
-1. **Header** — Name, Role, Review Period (do NOT include job level; levels are internal)
+1. **Title** — Format: `# Performance Review: [Full Name] - [Mon YY] – [Mon YY]` (e.g., `# Performance Review: Anushka Chaudhuri - Jan 26 – Jun 26`). Use abbreviated month and two-digit year. Below the title, include Role and Reviewer name. Do NOT include job level; levels are internal.
 2. **Competency sections** — As defined by the HR template, each with Rating + Comment
 3. **Values sections** — Each company value with rating + overall values comment
 4. **Growth & Development** — Growth focus, action/experience, why it matters
