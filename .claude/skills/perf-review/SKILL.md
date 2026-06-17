@@ -60,7 +60,7 @@ Check which MCP tools are available. The agent's capabilities depend on what's c
 - If NO: Tell the manager: "Slack MCP is not connected. You'll need to manually provide Slack evidence. You can paste relevant messages or export them into `inputs/<name>-slack-evidence.md` for each team member."
 
 **Granola MCP:** Check if `list_meeting_folders`, `get_meeting_transcript`, or similar Granola tools are available.
-- If YES: Meeting notes (Phase 4) will be pulled automatically from Granola.
+- If YES: Meeting notes (Phase 5) will be pulled automatically from Granola. Advise the manager to **organize their Granola meetings into folders, one folder per team member.** For example, a folder called "Alex 1:1" should contain all 1:1s, standups, project meetings, and any other conversations relevant to Alex's review. The agent will pull all transcripts from that folder. Tell the manager: "For each team member, create a Granola folder and move all relevant meetings into it (1:1s, standups, project discussions, skip-levels, anything where they participated). Then just give me the folder name and I'll pull everything."
 - If NO: Tell the manager: "Granola MCP is not connected. You'll need to upload meeting notes manually. Export relevant 1:1 notes, team meetings, or standups into `inputs/<name>-meeting-notes.md` for each team member, or drop files into `inputs/granola/`."
 
 **Other meeting note tools:** If you detect other meeting note MCP tools (e.g., Fireflies, Otter), adapt Phase 4 to use them instead.
@@ -115,7 +115,7 @@ Per-person inputs:
   [ ] Manager brain dump        → inputs/<name>-brain-dump.md
 
 Auto-gathered (depends on tool availability):
-  [ ] Meeting notes folder      → Which folder should I pull from? (or manual upload)
+  [ ] Granola folder            → Which folder? (group all relevant meetings per person)
   [ ] Slack search              → Will run automatically (or manual upload)
 ```
 
@@ -199,8 +199,9 @@ This is the most intensive phase. Use **multiple parallel subagents** to search 
 
 **If Granola MCP is available:**
 Pull meeting notes from the designated Granola folder for this team member:
-- Use the folder name provided during the pre-flight checklist
+- Use the folder name provided during the pre-flight checklist. The manager should have grouped all relevant meetings (1:1s, standups, project discussions, skip-levels) into a single folder per team member.
 - **Always pull the full transcript**, not the AI-generated summary. Transcripts contain the raw conversation (the actual words spoken, tone, and context) which is far richer evidence than a summary. Summaries lose nuance, miss side comments, and flatten the signal.
+- Pull **all meetings** from the folder. Don't skip any; the manager curated the folder specifically for this review.
 - Look for: 1:1 notes, team meetings, project standups, design reviews, planning sessions
 - Extract: action items they owned, decisions they drove, feedback given/received, specific things said that reveal ownership, initiative, or growth areas
 - Note patterns in meeting participation and contribution quality

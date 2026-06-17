@@ -132,7 +132,7 @@ A Claude Code skill that helps managers write thorough, evidence-based performan
 The agent works best with these MCP servers connected, but adapts gracefully without them:
 
 - **Slack MCP** — enables automatic Slack research across all channels and DMs
-- **Granola MCP** — enables automatic meeting transcript pulling
+- **Granola MCP** — enables automatic meeting transcript pulling. If you use Granola, organize your meetings into **one folder per team member** (e.g., "Alex 1:1") containing all relevant conversations (1:1s, standups, project meetings). The agent pulls all transcripts from the folder you point it to.
 
 If these aren't connected, the agent will ask you to upload evidence manually.
 
@@ -141,7 +141,7 @@ If these aren't connected, the agent will ask you to upload evidence manually.
 1. Clone this repo into your working directory:
 
 ```bash
-git clone https://github.com/rafaellreap/perf-review-agent.git
+git clone https://github.com/raphaelreap/perf-review-agent.git
 cd perf-review-agent
 ```
 
