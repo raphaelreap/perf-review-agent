@@ -1,0 +1,21 @@
+# Per-person inputs (contain confidential review data)
+inputs/*-peer-reviews.md
+inputs/*-self-review.md
+inputs/*-brain-dump.md
+inputs/*-slack-evidence.md
+inputs/*-meeting-notes.md
+inputs/team-roster.md
+inputs/setup-complete.md
+inputs/granola/
+
+# Outputs (contain confidential review drafts)
+outputs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
