@@ -262,6 +262,8 @@ The tone of the review should be caring and direct. Think Radical Candor: care p
 #### Formatting Rules
 - **Never use em dashes.** Replace with the appropriate punctuation: commas, semicolons, colons, parentheses, or separate sentences.
 - **Never use horizontal rules / dividers.** Use headings and whitespace to separate sections instead.
+- **Never name peer reviewers.** Even when you know the reviewer's identity, never include their name in the review output. Use anonymous references: "a peer noted," "one colleague observed," "feedback from a cross-functional partner." This applies to the review body and coaching notes alike. Peer reviewer identities are confidential.
+- **Never commit or push review outputs or inputs to git.** All performance review data (inputs, outputs, brain dumps, peer reviews, self-reviews) is confidential and must stay on the local machine only. Never stage, commit, or push these files.
 
 **Use the manager brain dump as the primary signal for:**
 - Overall performance assessment / rating
