@@ -27,8 +27,8 @@ There are **five** categories of inputs for each team member review. Some are sh
 6. **Review period** — the date range being assessed (e.g., Jan 2026 - Jun 2026)
 
 ### Per-person inputs
-7. **Peer reviews** — feedback comments from the team member's peers → `inputs/<name>-peer-reviews.md`
-8. **Self-review** — the team member's own self-assessment → `inputs/<name>-self-review.md`
+7. **Peer reviews** — feedback comments from the team member's peers → `inputs/<name>-peer-reviews.md`. Used as corroborating evidence in the review.
+8. **Self-review** — the team member's own self-assessment → `inputs/<name>-self-review.md`. **Important: the self-review is NOT used to write the review content.** It is only used for the coaching notes section, where the agent compares what the team member said about themselves vs. what the evidence and manager assessment show. This comparison helps the manager prepare for the review conversation.
 9. **Manager brain dump** — the manager's unstructured thoughts, impressions, and key points → `inputs/<name>-brain-dump.md`
 
 ### Auto-gathered inputs (the agent does this, depending on available tools)
@@ -123,9 +123,11 @@ Auto-gathered (depends on tool availability):
 
 1. Verify shared inputs have real content. If not, flag it.
 2. Check if `inputs/<name>-peer-reviews.md` exists and has content. If missing, ask the manager to upload peer feedback.
-3. Check if `inputs/<name>-self-review.md` exists and has content. If missing, ask the manager to upload the self-review.
+3. Check if `inputs/<name>-self-review.md` exists and has content. If missing, ask the manager to upload the self-review. Remind them: the self-review is not used to write the review; it's only used for the coaching notes comparison (self-perception vs. manager assessment).
 4. Check if `inputs/<name>-brain-dump.md` exists and has content. If missing, ask the manager to provide their notes (can be pasted inline; you'll save it to the file).
 5. If Granola is available, ask for the **folder name** to pull meeting notes from for this team member. If not, confirm manual notes are uploaded.
+
+**Tip for the manager on uploading peer reviews and self-reviews:** You can take a screenshot directly from your HR tool (e.g., OmniHR) and drag-and-drop the image; the agent can read screenshots. Or you can copy-paste the text content and tell the agent what it is ("this is the peer review for Alex," "this is their self-review"). Either way works.
 
 **Only proceed to Phase 2 for a given team member when all their items are checked off.**
 
